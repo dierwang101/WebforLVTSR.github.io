@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <!-- <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TPPFHZQ');
+    </script> -->
+
+    <title>LVTSR: Learning Visable Image Texture Network for Infrared Polarization Image Super-Resolution</title>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,minimum-scale=1.0">
+    <meta name=description content="LVTSR: Learning Visable Image Texture Network for Infrared Polarization Image Super-Resolution">
+    <meta name=keywords content="Infrared Polarization, Super-Resolution">
+    <meta name=author content="Xuesong Wang, University of Fuzhou">
+    <meta name=robots content=all>
+    <link rel=apple-touch-icon sizes=180x180 href=assets/favicons/apple-touch-icon.png>
+    <link rel=icon type=image/png sizes=32x32 href=assets/favicons/favicon-32x32.png>
+    <link rel=icon type=image/png sizes=16x16 href=assets/favicons/favicon-16x16.png>
+    <link rel=manifest href=assets/site.webmanifest>
+    <link rel=mask-icon href=assets/safari-pinned-tab.svg color=#5bbad5>
+    <meta name=msapplication-TileColor content=#da532c>
+    <meta name=theme-color content=#ffffff>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel=stylesheet>
+    <link rel=stylesheet href=assets/css/style.css>
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
+</head>
+
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPPFHZQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <canvas id=global-canvas></canvas>
+    <div class=container>
+        <div class=header>
+            <div class=title>
+                <h1> LVTSR: Learning Visable Image Texture Network for Infrared Polarization Image Super-Resolution</h1>
+                <div class=title-line>
+                    <hr>
+                </div>
+            </div>
+            <div class=subheading>
+                <h2>07 05 2024</h2>
+                <!-- <p class=subheading-link> <a href=assets/Hartmann_AugmentedAugmentedReality_UIST2020.pdf>Download PDF (12 MB)</a> or <a href=assets/Hartmann_AugmentedAugmentedReality_UIST2020_LowRes.pdf>Low-Res PDF (4 MB)</a> </p> -->
+            </div>
+            <div class=authors>
+                <h4>
+                    <p style=text-align:center>
+                        <span class=no-wrap><a href=https://jxxy.fzu.edu.cn/info/1218/8360.htm target=_blank>Xianyu Wu</a>,</span>
+                        <span class=no-wrap>Xuesong Wang,</span>
+                        <!-- <span class=no-wrap><a href=https://www.nonsequitoria.com/ target=_blank> Feng Huang</a></span> -->
+                        <span class=no-wrap> Feng Huang</a></span>
+                    </p>
+                </h4>
+            </div>
+            <div class=organization>
+                <h3>Fuzhou University</h3>
+            </div>
+        </div>
+        <div class=content>
+            <h5>Abstract</h5>
+            <p> <span class=dropcap>T</span>he infrared polarization (IRP) Division-of-Focal-Plane (DoFP) imaging technology has received much attention, 
+                but the insufficient resolution caused by sensor size has hindered the development and application of IRP imaging technology. 
+                Meanwhile, high-resolution (HR) visible light (VIS) is relatively easy to obtain. Therefore, using VIS images as auxiliary priors to enhance the 
+                super-resolution (SR) of infrared polarization imaging is of great significance. However, compared with infrared SR, the SR of DoFP infrared polarization 
+                imaging is more challenging due to the need to reconstruct accurate polarization information. In this paper, we propose an effective 
+                multi-modal SR network and achieve end-to-end IRP SR based on the designed loss function. In addition, 
+                we establish the first benchmark dataset with a focus on multi-modal IRP SR. 
+                The dataset contains 1559 pairs of registered images, including buildings, streets, and pedestrians. Experiments on this dataset 
+                show that the proposed method and designed loss function can effectively utilize VIS images and restore the polarization information 
+                of IRP images, achieving 4x SR. The experimental results also indicate that the proposed method outperforms the 
+                competing methods in both quantitative evaluation and visual effect evaluation. </p>
+            <img width=1000 src=assets/img/result.gif alt="Displaying consecutive images.">
+            <div style="text-align:center;">
+                <p>
+                    In the figure above, HR refers to high-resolution images, LR refers to images downsampled four times from HR,
+                     and SR refers to super-resolution images. The first column displays infrared polarization DoFP images, 
+                    the second column displays DoLP images, the third column displays AoP images, and the last column displays
+                     guided visible light images. These images were captured continuously at a specific dock.
+                </p>
+            </div>
+
+            <!-- <div class="section video-container"><iframe width=560 height=315 src="https://player.bilibili.com/player.html?aid=514713203&bvid=BV15g411r7Av&cid=808179013&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>  -->
+            <br>
+            <!-- <div class="section video-container"> <iframe width=560 height=315 src=https://www.bilibili.com/ frameborder=0 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div> -->
+            <h5>GitHub</h5>
+                <p> The code will soon be
+                    <a href=https://github.com/dierwang101 target=_blank> <b>open-source code on GitHub</b></a>. 
+                </p>
+            <div class=section>
+                <h5>Our relative work.</h5>
+                <h1>SwinIPISR: A Super-Resolution Method for Infrared Polarization Imaging Sensors 
+                    via Swin Transformer</h1>
+                <h5>Abstract</h5>
+                <p> The performance of the emerging infrared polarization remote sensing systems is limited by the use of infrared polarization imaging sensors and cannot produce high-resolution (HR) infrared polarization images. The lack of HR infrared polarization imaging sensors and systems hinders the development and application of infrared polarization imaging technology. The existing infrared image super-resolution (SR) methods fail to improve the resolution of infrared polarization images (IRPIs) while preserving the infrared polarization information inherent in the IRPIs; thus, aiming at obtaining accurate HR infrared polarization images, this study proposed a deep-learning-based SR method, SwinIPISR, to improve infrared polarization image resolution and preserve the infrared polarization information of the target or scene. The performance of the proposed SwinIPISR was verified and compared with existing SR methods. In contrast to other methods, SwinIPISR not only improves image resolution but also retains polarization information of the scene and objects in the polarization image. Further, the impact of the network depth of SwinIPISR on the SR performance was evaluated through experiments. The experimental results confirmed the effectiveness of the proposed SwinIPISR in enhancing the image resolution and visual effects of infrared polarization images without compromising the polarization information. </p>
+
+                <div class=paper-thumbnails>
+                    <div class=page>
+                        <a href=assets/SwinIPISR.pdf><img src=assets/img/SwinIPISR_Page_00.jpg alt="Download SwinIPISR Paper in pdf" class=linkimg></a>
+                    </div>
+                    <div class=page>
+                        <a href=assets/SwinIPISR.pdf#page=2><img src=assets/img/SwinIPISR_Page_01.jpg alt="Download SwinIPISR Paper in pdf" class=linkimg></a>
+                    </div>
+                    <div class=page>
+                        <a href=assets/SwinIPISR.pdf#page=3><img src=assets/img/SwinIPISR_Page_02.jpg alt="Download SwinIPISR Paper in pdf" class=linkimg></a>
+                    </div>
+                    <div class=page>
+                        <a href=assets/SwinIPISR.pdf#page=4><img src=assets/img/SwinIPISR_Page_03.jpg alt="Download SwinIPISR Paper in pdf" class=linkimg></a>
+                    </div>
+                    <p class=pt-15> Click to <a href=assets/SwinIPISR.pdf class=content-link>download</a> a PDF of the paper. </p>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class=content>
+            <div class=section>
+
+                <!-- <iframe src="https://ghbtns.com/github-btn.html?user=exii-uw&repo=AARToolkit&type=star&count=true&size=large" frameborder=0 scrolling=0 width=170 height=30 title=GitHub></iframe> </div> -->
+
+            <div class=section>
+                <h1>Dataset</h1>
+                <p>To build our own dataset, we captured a diverse set of visable light and infrared polarized images (VISIRPIs) using an infrared polarized camera and a visible light camera. 
+                    We used the infrared polarized focal plane array LD-LW640-P produced by Xi'an Liding Optoelectronics Technology Co., Ltd.
+                    The spectral range of this infrared polarized camera is 8-14 µm, with a pixel size of 17 µm and a lens focal length of 25 mm. 
+                    This infrared polarized camera has a spectral range of 8-14 µm, a pixel size of 17 µm, and a lens focal length of 25 mm, 
+                    with a resolution of 640 pixels × 512 pixels. We used two different visible light cameras: the MV-CA013-20GM from Hikvision, 
+                    equipped with a PYTHON1300 detector and a 16mm lens, and the BFS-U3-51S5P from FLIR, using a Sony IMX250MZR detector and a 
+                    lens focal length of 25mm. The MV-CA013-20GM has a pixel size of 4.8µm and a resolution of 1280 × 1024, while the BFS-U3-51S5P 
+                    has a spectral range of 300-1100nm, a pixel size of 3.45 µm, and a resolution of 2248 pixels × 2048 pixels. 
+                    We used the intensity image obtained by computing the full-color polarized image as the visible light image. Using a 
+                    combination of binocular cameras, we captured paired images of infrared polarized and visible light in various scenes, 
+                    including pedestrians, vehicles, buildings, ships, and streets. To correct the severe distortion in the infrared polarized 
+                    images, we first performed distortion correction. Then, using precise registration methods, we successfully captured 1559 
+                    sets of Vis-IRPIs with a resolution of approximately 475 × 370. The samples of the dataset are shown in the following images.</p>
+                <img width=1000 src=assets/img/showdataset.jpg alt="The samples of the dataset are shown in the images.">
+                <p class=subheading-link> <a>Download Dataset</a> The data will soon be open-sourced. </p>
+
+            <div class=section>
+                <h5 style="text-transform: none;">BibTeX</h5>wating for update.
+                <!-- prettier-ignore<textarea id=bibtex-text class="ta-cite bibtex" autocomplete=off spellcheck=false>
+                    @inproceedings{Hartmann2020AAR,
+author = {Hartmann, Jeremy and Yeh, Yen-Ting and Vogel, Daniel},
+title = {AAR: Augmenting a Wearable Augmented Reality Display with an Actuated Head-Mounted Projector},
+year = {2020},
+isbn = {9781450375146},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3379337.3415849},
+doi = {10.1145/3379337.3415849},
+abstract = {Current wearable AR devices create an isolated experience with a limited field of view, vergence-accommodation conflicts, and difficulty communicating the virtual environment to observers. To address these issues and enable new ways to visualize, manipulate, and share virtual content, we introduce Augmented Augmented Reality (AAR) by combining a wearable AR display with a wearable spatial augmented reality projector. To explore this idea, a system is constructed to combine a head-mounted actuated pico projector with a Hololens AR headset. Projector calibration uses a modified structure from motion pipeline to reconstruct the geometric structure of the pan-tilt actuator axes and offsets. A toolkit encapsulates a set of high-level functionality to manage content placement relative to each augmented display and the physical environment. Demonstrations showcase ways to utilize the projected and head-mounted displays together, such as expanding field of view, distributing content across depth surfaces, and enabling bystander collaboration.},
+booktitle = {Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology},
+pages = {445–458},
+numpages = {14},
+keywords = {augmented reality, calibration, asymmetric interaction, spatial augmented reality, projection mapping},
+location = {Virtual Event, USA},
+series = {UIST '20}
+} -->
+</textarea> </div>
+            <!-- <div class=section>
+                <h5 style="text-transform: none;">ACM Citation Format</h5>
+             <textarea id=bibtex-text class="ta-cite bibacm" autocomplete=off spellcheck=false>Jeremy Hartmann, Yen-Ting Yeh, and Daniel Vogel. 2020. AAR: Augmenting a Wearable Augmented Reality Display with an Actuated Head-Mounted Projector. In Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology (UIST '20). Association for Computing Machinery, New York, NY, USA, 445–458. DOI:https://doi.org/10.1145/3379337.3415849</textarea>                </div> -->
+        </div>
+        <div class=footer>
+            <div class=footer-decoration>
+                <div class=footer-decoration-col style="background-color: #1A1A1A;"></div>
+                <div class=footer-decoration-col style="background-color: #D413BD;"></div>
+                <div class=footer-decoration-col style="background-color: #4D0766;"></div>
+                <div class=footer-decoration-col style="background-color: #0599A3;"></div>
+            </div>
+            <div class=footer-content>
+                <div class=footer-links-row>
+                    <div class=footer-links-left>
+                        <h6>Additional Links</h6>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="https://jxxy.fzu.edu.cn/">School of Mechanical Engineering and Automation, Fuzhou University</a>
+                            </li>
+                            <li><a href="https://xjjs.fzu.edu.cn/">Advanced Technology Innovation Research Institute</a></li>
+                        </ul>
+                    </div>
+                    <div class=footer-links-right>
+                        <a href=https://www.fzu.edu.cn/ class=imglink><img src=assets/img/footer_logo.png class="logos linkimg" width="100%"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=assets/js/main.js></script>
+</body>
+
+</html>
